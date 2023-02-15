@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="stylesheet" href="media/custom.css"-->
+    <title>CV/Resume Template</title>
+    <style>
+        @media screen, print {
+            /* GLOBAL */
+            * {
+                margin: 0;
+                padding: 0;
+                direction: ltr;
+                position: relative;
+            }
+            html, body {
+                background-color: whitesmoke;
+                color: rgb(0,21,63);
+            }
+            body {
+                width: 210mm;
+                margin: 1vw auto;
+                font-size: min(2.1vw,13pt);
+                font-family: serif !important;
+            }
+
+            .clear-fix {
+                clear: both;
+            }
+            /* GLOBAL ENDS */
+
+            /* Document Sections */
+            .resumee, .curriculum-vitae {
+                border: 0.1vw solid;
+                margin: 1vw auto;
+                padding: 5mm 5mm 5mm 20mm;
+                background-color: white;
+            }
+            div.document-type-title {
+                color: rgb(0,0,96);
+                font-family: cursive;
+                font-size: 60%;
+                width: 98%;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                top: 1px;
+                right: 1px;
+                text-align: right;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(0,128,255);
+            }
+            a.external {
+                color: rgb(0,8,96);
+            }
+            a:hover {
+                color: rgb(0,0,127);
+            }
+            /* Document Sections End */
+
+            /* DIV HEADER */
+            div.header {
+                text-align: center;
+                width: 100%;
+            }
+            div.header-name {
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+            div.header-contact-info {
+                font-style: oblique;
+            }
+            div.header-location {
+                font-family: 'Courier New', monospace;
+            }
+            div.header-pi {
+                width: 70%;
+                float: left;
+                font-weight: bold;
+            }
+            div.header-img {
+                width: 30%;
+                height: 54mm;
+                position: relative;
+                float: left;
+            }
+            div.header-img > img {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                width: 40mm;
+                height: 40mm;
+                border-radius: 47.5%;
+                border: 0px solid red;
+            }
+
+            #cv-current-euformat > div.header {
+                width: 33%;
+                float: left;
+                text-align: left;
+            }
+            #cv--current-euformat > div.separator {
+                width: 2%;
+                float: left;
+            }
+            #cv-current-euformat > div.body {
+                width: 65%;
+                float: right;
+            }
+            /* DIV HEADER ENDS */
+
+            /* DIV BODY */
+            div.body {
+                margin-top: 5vw;
+                position: inherit;
+            }
+            /*DIV BODY ENDS */
+
+            /* DIV SECTION */
+            div.section {
+                margin-top: 1ex;
+            }
+            div.section-head {
+                font-weight: 700;
+                margin-left: 0;
+                margin-top: 2vw;
+                font-size: 105%;
+            }
+            div.section-body {
+                font-size: 80%;
+            }
+
+            div.section-body p {
+                text-indent: 2ex;
+                letter-spacing: 0.45px;
+                line-height: 1.05em;
+                word-spacing: 0.1pt;
+                margin: 2pt 0 2pt 0;
+                display: block;
+            }
+            .label {
+                font-family: serif;
+                color: rgb(0,32,96);
+            }
+            .data {
+                display: inline-block;
+                font-style: oblique;
+                font-family: monospace;
+                margin-left: 1ex;
+            }
+            /* DIV SECTION ENDS */
+        }
+
+        @media print {
+            /* Document Sections */
+            .resumee, .curriculum-vitae {
+                border: 0vw solid;
+                margin: 1vw auto;
+                padding: 4pt;
+                background-color: white;
+            }
+            /* Document Sections Ends */
+        }
+    </style>
+</head>
+<body>
+<!-- Resumee -->
+<div id="resumee" class="resumee">
+    <div class="document-type-title">Resumee</div>
+    <div class="header">
+        <div class="header-name">someones f. name</div>
+        <div class="header-contact-info">
+            E-mail: <a href="mailto:">mail@mail.mail</a>, Phone: <a href="tel:+00000000000">+000<span style="margin: 0.5ex;">000</span>000000</a>
+        </div>
+        <div class="header-location">
+            Location: Somewhere, Web: <a href="http://...">www.website.web</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="section">
+            <div class="section-head">Summary</div>
+            <div class="section-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error iure debitis cum?</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-head">Relevant Skills</div>
+            <div class="section-body">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, saepe! Libero, nesciunt tempora.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet <a href="#" target="_blank" class="external">consectetur</a>, adipisicing elit. Rerum neque perferendis quod dignissimos
+                    architecto veniam amet nam repellendus iure eveniet provident eaque nihil quos, blanditiis quis repudiandae
+                    expedita sit doloribus.
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-head">Work Experience</div>
+            <div class="section-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rem sint minima deleniti porro id ipsam
+                    molestias error praesentium.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatem consectetur sint cumque
+                    molestias!</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-head">Education</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head"></div>
+            <div class="section-body"></div>
+        </div>
+    </div>
+</div>
+<!-- // Resumee -->
+<div class="clear-fix"></div>
+
+<!-- CV Current EU Format -->
+<div id="cv-current-euformat" class="curriculum-vitae">
+    <div class="document-type-title">Curriculum Vitae</div>
+    <div class="header">
+        <div class="section">
+            <div class="section-head"></div>
+            <div class="section-body">
+                <div class="header-img">
+                    <img src="./default.png" alt="Image not available" />
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-head">Contacts</div>
+            <div class="section-body">
+                <span class="label">email</span>:<span class="data"><a href="mailto:name@domain.ext">name@domain.ext</a></span><br>
+                <span class="label">mobile</span>:<span class="data"><a href="tel:">+000000000000</a></span><br>
+                <span class="label">web</span>:<span class="data"><a href="">www.domain.ext</a></span><br>
+                <span class="label">telegram</span>:<span class="data"><a href="">t.me/aliasname</a></span><br>
+                <span class="label">github</span>:<span class="data"><a href="">@username</a></span><br>
+                <span class="label"></span>:<span class="data"></span><br>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-head">Languages</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Skills</div>
+            <div class="section-body"></div>
+        </div>
+
+    </div>
+    <div class="separator"></div>
+    <div class="body">
+        <div class="section">
+            <div class="section-head">Name</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Professional Experience</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Education</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Languages</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Computer Skils (and related)</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Courses and Certificates</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Additional Information</div>
+            <div class="section-body"></div>
+        </div>
+        <div class="section">
+            <div class="section-head">Desired Workplace</div>
+            <div class="section-body"></div>
+        </div>
+    </div>
+    <div class="clear-fix"></div>
+</div>
+<!-- // CV Current EU Format -->
+
+<!-- Curriculum Vitae -->
+<div  id="curriculum-vitae-general" class="curriculum-vitae">
+    <div class="document-type-title">Curriculum Vitae</div>
+    <div class="header">
+        <div class="header-pi">
+            <div>Name and personal info</div>
+            <div>Contact information</div>
+            <div>another line</div>
+
+        </div>
+        <div class="header-img">
+            <img src="./default.png" alt="Name (image cannot be loaded)">
+        </div>
+    </div>
+    <div class="clear-fix"></div>
+
+    <div class="section">
+        <div class="section-head">Personal Information</div>
+        <div class="section-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse?</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-head">Education</div>
+        <div class="section-body"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-head">Professional Experience</div>
+        <div class="section-body"></div>
+    </div>
+    <div class="section">
+        <div class="section-head">Computer and Related Skills</div>
+        <div class="section-body">
+
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-head">Languages</div>
+        <div class="section-body"></div>
+    </div>
+    <div class="section">
+        <div class="section-head">Additional Information</div>
+        <div class="section-body"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-head">Last Modified</div>
+        <div class="section-body"><script>document.write((new Date()).toLocaleString());</script></div>
+    </div>
+</div>
+<!-- // Curriculum Vitae -->
+</body>
+</html>
