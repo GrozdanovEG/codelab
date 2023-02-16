@@ -8,3 +8,5 @@ if ($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') echo <<<COUNTERCODE
         <div class="counter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12560743/0/214552a0/1/" alt="Web Analytics"></a></div>
     </noscript>
 COUNTERCODE;
+else
+   echo '<!-- counter code unnecessary -->'.PHP_EOL ;

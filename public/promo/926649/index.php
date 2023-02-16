@@ -90,5 +90,8 @@
         <img src="EnrollPage.png" style="width: 100%" />
     </div>
 </div>
+<?php
+include __DIR__ . '/../../../common/countercode.php';
+?>
 </body>
 </html>
