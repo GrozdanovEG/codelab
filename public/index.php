@@ -16,6 +16,9 @@
         <p>Are you ready to become one of us?</p>
         <p><a href="promo/926649/">See the promo!</a></p>
     </div>
+    <?php
+    include __DIR__ . '/../common/countercode.php';
+    ?>
 </body>
-</html><?php
+</html>
 
