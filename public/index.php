@@ -7,10 +7,10 @@
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" media="screen,print" href="assets/css/styles.css">
-    <title>Hello Backend</title>
+    <title>Hello Codelab</title>
 </head>
 <body>
-    <h1>Hello BackEnd </h1>
+    <h1>Hello Codelab</h1>
 
     <div>
         <p>Are you ready to become one of us?</p>
