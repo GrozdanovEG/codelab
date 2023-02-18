@@ -1,0 +1,19 @@
+{
+    "require": {},
+    "require-dev": {},
+    "name": "grozdanoveg/codelab",
+    "description":  "General purpose repository for codes created during and after my training as a backend developer.",
+    "autoload": {
+        "psr-4": {
+            "Codelab\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emil Grozdanov",
+            "email": "e_grozdanov@abv.bg"
+        }
+    ]
+}
+
+
