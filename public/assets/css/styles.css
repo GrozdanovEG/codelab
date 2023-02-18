@@ -29,22 +29,31 @@ ul {
 }
 
 p {
-    font-family: sans-serif;
-    width: 90%;
+    font-family: serif;
+    width: 80%;
     margin: auto;
     padding: 0.5em;
+    text-indent: 2ex;
+    letter-spacing: 0.45px;
+    line-height: 1.05em;
+    word-spacing: 0.1pt;
 }
 
-a {
+a:link {
     text-decoration: none;
     color: rgb(196,0,196);
 }
 a:visited {
-    color: rgb(128,48,48);
+    color: rgb(144, 32, 32);
+}
+a.external {
+    color: rgb(0,8,144);
 }
 a:hover {
     color: rgb(196,0,0);
     text-decoration: underline;
 }
+
+
 
 /* GLOBAL ENDS */

@@ -2,11 +2,13 @@
 
 //namespace Codelab\Handlers;
 
-/* written to be compatible with PHP 7.3 for now */
+/* written to be compatible with PHP 7.4 for now */
 class RedirectionHandler
 {
     /** @var string $route */
-    private $route;
+    private string $route;
+    private int $timeout = 1;
+    const LIMIT = 30;
 
     public function __construct($route)
     {
@@ -16,7 +18,7 @@ class RedirectionHandler
     public function redirect(): void
     {
         $this->redirectByHeader();
-        sleep(1);
+        sleep($this->timeout);
         echo $this->generateHtmlRedirectOutput();
     }
 
@@ -27,13 +29,14 @@ class RedirectionHandler
 
     public function generateHtmlRedirectOutput(): string
     {
+        $toMilliSeconds = ($this->timeout * 1000);
         return <<<OUTPUT
             <html lang="en">
             <head>
-                <title>Redirecting ...</title>
-                <meta http-equiv="refresh" content="2, URL=$this->route">
+                <title>Redirecting ... </title>
+                <meta http-equiv="refresh" content="$this->timeout, URL=$this->route">
                 <script> 
-                    setTimeout('self.location = "$this->route", 1800); 
+                    setTimeout('self.location = "$this->route", $toMilliSeconds); 
                 </script>
             </head>
             <body>
@@ -43,5 +46,13 @@ class RedirectionHandler
             </body>
             </html>
             OUTPUT;
+    }
+
+    public function changeInterval(int $interval): self
+    {
+        if ($interval > 0 && $interval < self::LIMIT) {
+            $this->timeout = $interval;
+        }
+        return $this;
     }
 }

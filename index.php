@@ -2,4 +2,6 @@
 require __DIR__ . '/src/Handlers/RedirectionHandler.php';
 $route = 'http://codelab.emilggrozdanov.online/';
 
-(new RedirectionHandler($route))->redirect();
+(new RedirectionHandler($route))
+    ->changeInterval(3)
+    ->redirect();
