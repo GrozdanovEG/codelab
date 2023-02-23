@@ -30,6 +30,9 @@
             text-decoration: none;
             color: rgb(0,0,212);
         }
+        hr {
+            margin: 8ex;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +46,7 @@
         Visit <a href="https://academy.jagaad.com/">https://academy.jagaad.com/</a> and use the promo code: <span style="color: rgb(0,0,196);">926<i style="margin: 2pt;"></i>649</span> during the enrolment process, and you will receive 20% discount.
     </p>
     <p>
-        For more information see the slide(s) or ask me via PM!
+        For more information <a href="#l1">see the details below</a>!
     </p>
     <p>
         See you on board! :)
@@ -92,10 +95,13 @@
     * It looks like this
     <div>
         URI Address: <a href="https://enroll.academy.jagaad.com/" target="ja"><strong>https://enroll.academy.jagaad.com/</strong>course-hash-here</a>
-        <img src="EnrollPage.png" style="width: 100%" />
+        <img src="./EnrollPage.png" style="width: 100%" />
     </div>
+    <div style="margin-top: 2em;">&#160;</div>
+    <div style="text-align: center;"><a href="#top">go to the top</a></div>
+    <div style="margin-top: 2em;">&#160;</div>
 </div>
-<div style="margin-top: 2em;">&#160;</div>
+
 <?php
    include __DIR__ . '/../../../common/countercode.php';
 ?>
