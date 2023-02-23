@@ -24,7 +24,7 @@
         ol > li {
             padding: 4pt;
             margin-top: 1em;
-            font-family: Liberation;
+            font-family: "Liberation Serif";
         }
         a {
             text-decoration: none;
