@@ -1,8 +1,8 @@
 <?php
+declare(strict_types=1);
+namespace Codelab\Handlers;
 
-//namespace Codelab\Handlers;
-
-/* written to be compatible with PHP 7.4 for now */
+/* written to be compatible with PHP 8.0 for now */
 class RedirectionHandler
 {
     /** @var string $route */

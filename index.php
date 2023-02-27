@@ -1,7 +1,9 @@
 <?php
-require __DIR__ . '/src/Handlers/RedirectionHandler.php';
+use Codelab\Handlers\RedirectionHandler;
+require_once __DIR__ . '/vendor/autoload.php';
+
 $route = 'http://codelab.emilggrozdanov.online/';
 
 (new RedirectionHandler($route))
-    ->changeInterval(3)
+    ->changeInterval(2)
     ->redirect();
